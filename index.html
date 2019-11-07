@@ -2,13 +2,12 @@
 <html>
 <head>
 	<title>University of Cape Coast | Application Portal</title>
-	<!--Required metatag and stylesheet-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="short icon" href="Img/logo.png" type="image/png" sizes="16x16">
-	<style>
+<style>
 
 body {
 	background: #FFF;
@@ -19,7 +18,16 @@ body {
 
 .navbar {
 	background: #FFF;
-	height: 12px;
+	height: 95px;
+}
+
+.navbar-brand {
+	float: left;
+}
+
+.portal-guide {
+	margin-top: 135px;
+
 }
 
 .welcome {
@@ -29,15 +37,14 @@ body {
 	padding: 25px 50px 75px 50px;
 	margin-bottom: 25px;
 	border-radius: 10px;
-  border: 2px solid;
-  box-shadow: 5px 5px #C0C0C0;
+    border: 2px solid;
+    box-shadow: 5px 5px #C0C0C0;
 
 }
 
 .introduction {
 	font-size: 18px;
 }
-
 
 .panel-title, .panel {
 	font-weight: bold;
@@ -47,7 +54,6 @@ body {
 .btn-warning, .btn-danger {
 	width: 275px;
 }
-
 
 .graduate-applicants  {
 	height: 400px;
@@ -61,9 +67,9 @@ body {
 }
 
 .jumbotron, .jumbotron-fluid {
-	background-image: url("Img/imagemain.jpeg");
+	background-image: url("Img/imagemain.png");
 	background-size: cover;
-	height: 550px;
+	height: 955px;
 	margin-top: -5%;
 
 }
@@ -87,12 +93,9 @@ a:visited {
 color: #171949;
 text-transform: full-width;
 font-weight: bolder;
-}
+display: inline-block;
 
-.navbar{
-	height: 95px;
 }
-
 
 .check-header{
 	text-align: center;
@@ -101,7 +104,6 @@ font-weight: bolder;
 .modal-content, .modal-footer{
   background: #FDF8E5;
 }
-
 
 footer {
 	background: #FFA500;
@@ -114,21 +116,27 @@ footer {
 	text-align: center;
 	padding: 50px
 }
-	</style>
+
+@media (max-width:800px) {
+   .jumbotron, .jumbotron-fluid {
+    display: none;
+  }
+}
+
+</style>
 </head>
 <body>
-  <!--hamburger menu-->
 	<nav class="navbar navbar-default navbar-affix-top">
 	<div class="navbar-header">
 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 	<span class="glyphicon glyphicon-menu-hamburger"></span>
 	</button>
-	<a class="navbar-brand" href="#"><img src="Img/logo.png" alt=logo width="40px" height="40px"></a>
-	<h2 class="school">University of Cape Coast</h2>
+	<a class="navbar-brand" href="index.html"><img src="Img/logo.png" alt=logo width="40px" height="40px"></a>
+	<h3 class="school">University of Cape Coast</h3>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse">
 	<ul class="nav navbar-nav navbar-right">
-	<li class="active"><a href="index.html">Home</a></li>
+	<li><a href="index.html">Home</a></li>
 	<li><a href="https://www.ucc.edu.gh/aboutus/about-ucc" target="_blank">About Us</a></li>
     <li><a href="https://ucc.edu.gh/main/applicants-and-students/definition-terms" target="_blank">Admissions</a></li>
 	<li><a href="https://ucc.edu.gh/contacts" target="_blank">Contact</a></li>
@@ -136,8 +144,6 @@ footer {
 	</div>
 	</nav>
     <br/>
-
-  <!--main image-->
 	<div class="jumbotron jumbotron-fluid">
 	<div class="container">
     </div>
@@ -152,12 +158,12 @@ footer {
 	<p class="introduction">As a prospective student, your education is important to us and we're glad you're here.</p>
 	<p class="introduction">Start your application by following the steps below.</p>
 	</section>
+    </section>
     </div>
     </div>
     </div>
 	<br/>
 	<br/>
-<!--accordian-->
     <div class="container">
     <div class="row">
     <div class="col-sm-9">
@@ -247,16 +253,16 @@ footer {
 	<div class="row">
 	<div class="col-sm-3">
     <div class="left-section">
-		<a href="https://apply.ucc.edu.gh/distance/cardlogin.aspx?StudyMode=Distance" target="_blank" class="btn btn-danger btn-lg">APPLY NOW</a>
-		<br/>
-		<br/>
-		<a href="https://portal.ucc.edu.gh/reset/login.php" target="_blank" class="btn btn-warning btn-lg">Visit Student Portal</a>
-		<br/>
-		<br/>
-		<a href="https://admissionlist.ucc.edu.gh/online_letters/admList.php" target="_blank" class="btn btn-warning btn-lg">View Admissions Status</a>
-		<br/>
-		<br/>
-		<a href="https://mail.google.com/a/ucc.edu.gh" target="_blank" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; Have a Question? <br/>Ask to speak with a counselor.</a>
+	<a href="https://apply.ucc.edu.gh/distance/cardlogin.aspx?StudyMode=Distance" target="_blank" class="btn btn-danger btn-lg">APPLY NOW</a>
+	<br/>
+	<br/>
+	<a href="https://portal.ucc.edu.gh/reset/login.php" target="_blank" class="btn btn-warning btn-lg">Visit Student Portal</a>
+	<br/>
+	<br/>
+	<a href="https://admissionlist.ucc.edu.gh/online_letters/admList.php" target="_blank" class="btn btn-warning btn-lg">View Admissions Status</a>
+	<br/>
+	<br/>
+	<a href="https://mail.google.com/a/ucc.edu.gh" target="_blank" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp; Have a Question? <br/>Ask to speak with a counselor.</a>
     <br/>
     <br/>
     </div>
@@ -278,45 +284,41 @@ footer {
 	<br/>
    </div>
    </div>
-	<div class="col-sm-7">
-	<div class="graduate-checklist">
-	 <h3 class="check-header">Graduate Application Checklist</h3>
-	 <br/>
-	 <ol>
-	 <li>Two (2) copies of relevant certificates authenticated by the awarding institution.</li>
-	 <br/>
-	 <li>Two (2) original copies of transcript of academic records.</li>
-	 <br/>
-	 <li>Two (2) sealed Referee's Reports (download graduate reference form) "for regular applicants only."</li>
-	 <br/>
-	 <li>Two (2) copies of Research Proposal "for regular applicants only."</li>
-	 <br/>
-	 <li>Applications which do not include reference numbers, WASSCE/SSSCE results slips or transcripts for post-diploma and post-graduate applicants will not be processed.</li>
-	</ol>
+   <div class="col-sm-7">
+   <div class="graduate-checklist">
+   <h3 class="check-header">Graduate Application Checklist</h3>
+   <br/>
+   <ol>
+   <li>Two (2) copies of relevant certificates authenticated by the awarding institution.</li>
+   <br/>
+   <li>Two (2) original copies of transcript of academic records.</li>
+   <br/>
+   <li>Two (2) sealed Referee's Reports (download graduate reference form) "for regular applicants only."</li>
+   <br/>
+   <li>Two (2) copies of Research Proposal "for regular applicants only."</li>
+   <br/>
+   <li>Applications which do not include reference numbers, WASSCE/SSSCE results slips or transcripts for post-diploma and post-graduate applicants will not be processed.</li>
+   </ol>
 </div>
 </div>
 </div>
-
 <div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-    <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h4 class="modal-title">University of Cape Coast</h4>
-    </div>
-    <div class="modal-body">
-        <p>This site uses cookies to deliver our services and to show you relevant ads and job listings. By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Your use of the University of Cape Coast's Products and
-		Services, including the University of Cape Coast is subject to these policies and terms.</p>
-    </div>
-    <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-    </div>
-    </div>
-    </div>
-    </div>
-
-<!-- FOOTER -->
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">University of Cape Coast</h4>
+</div>
+<div class="modal-body">
+<p>This site uses cookies to deliver our services and to show you relevant ads and job listings. By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service. Your use of the University of Cape Coast's Products and
+Services, including the University of Cape Coast is subject to these policies and terms.</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
 <footer class="footer">
 <div class="container">
 <div class="row">
@@ -331,13 +333,12 @@ Cape Coast, Ghanana<br/><br/>
 </address>
 </div>
 </footer>
-	<!--Required scripts-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script>
-	$(window).load(function(){
-	   $('#myModal').modal('show');
-	    });
-    </script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(window).load(function(){
+$('#myModal').modal('show');
+});
+</script>
 </body>
 </html>
